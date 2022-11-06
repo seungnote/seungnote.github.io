@@ -1,4 +1,6 @@
 ----
 layout: single
 title: 'this is the title'
+future: true
+published :true 
 ----
