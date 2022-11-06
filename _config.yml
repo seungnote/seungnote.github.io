@@ -282,7 +282,5 @@ defaults:
       comments: # true
       share: true
       future: true
-      
- published :true
-      
+      publised: true
       related: true
