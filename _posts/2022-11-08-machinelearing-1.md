@@ -135,7 +135,6 @@ with tf.compat.v1.Session() as sess:
     [[39.108223]]
     
 
-
-```python
+```
 
 ```
