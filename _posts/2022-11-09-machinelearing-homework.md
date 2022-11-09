@@ -633,7 +633,6 @@ plt.scatter(x_val, y_val)
 plt.scatter(x_val, y_pred, color='r')
 plt.show()
 ```
-
-    ![output_12_1](https://user-images.githubusercontent.com/88616282/200858788-9adb303a-131a-4539-9761-82bcccc9fb20.png)
+![output_12_1](https://user-images.githubusercontent.com/88616282/200858898-386dc8ee-6907-4cf2-b8c5-e09ee7acfe93.png)
 
 
