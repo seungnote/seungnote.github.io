@@ -108,16 +108,8 @@ sns.pairplot(df,x_vars=['YearsExperience'], y_vars=['Salary'],height=4)
 ```
 
 
-
-
-    <seaborn.axisgrid.PairGrid at 0x18b6e723340>
-
-
-
-
     
-![png](output_5_1.png)
-    
+![output_5_1](https://user-images.githubusercontent.com/88616282/200858679-71061a35-d7d9-4da1-b906-97b5bf8bf4d0.png)
 
 
 
@@ -396,13 +388,8 @@ plt.scatter(x_val,y_pred,color='r') #예측값은 빨간색. 가설은 선형이
 plt.show()
 ```
 
-    1/1 [==============================] - 0s 61ms/step
     
-
-
-    
-![png](output_10_1.png)
-    
+![output_10_1](https://user-images.githubusercontent.com/88616282/200858742-d420e939-ea10-48e5-bd28-f50961872ee4.png)
 
 
 
@@ -647,11 +634,6 @@ plt.scatter(x_val, y_pred, color='r')
 plt.show()
 ```
 
-    1/1 [==============================] - 0s 35ms/step
-    
+    ![output_12_1](https://user-images.githubusercontent.com/88616282/200858788-9adb303a-131a-4539-9761-82bcccc9fb20.png)
 
-
-    
-![png](output_12_1.png)
-    
 
