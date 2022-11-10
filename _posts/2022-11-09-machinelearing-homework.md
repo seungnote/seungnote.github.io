@@ -1,10 +1,24 @@
+---
+title:  "[Python] 머신러닝_kaggleQUIZ" 
+
+categories:
+  - ADP
+tags:
+  - [Python,ADP,machine_learing]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-09
+
+---
 ```python
 import os
 os.environ['KAGGLE_USERNAME'] = 'seungnote' # username
 os.environ['KAGGLE_KEY'] = 'bc254ae94554f39d41fcab91537514ad' # key
 ```
 
-
+## 연차-연봉 데이터셋 살펴보기 https://www.kaggle.com/rsadiq/salary
 ```python
 !kaggle datasets download -d rsadiq/salary
 ```
@@ -392,13 +406,24 @@ plt.show()
 ![output_10_1](https://user-images.githubusercontent.com/88616282/200858742-d420e939-ea10-48e5-bd28-f50961872ee4.png)
 
 
+## Learning rate(lr)를 바꾸면서 실험하기
+## Optimizer를 바꾸면서 실험하기
+## 손실함수(loss)를 mean_absolute_error 로 바꿔서 실험하기
+
+optimizer= **최적 구간에 도달하기 위한 걸음 방향
+걸음방법을 다르게하고 학습률lr 보폭을 조절하면서 최적의 구간에 도달하려고함
+
+**데이터셋에 맞는 optimizer를 찾는거 중요
+
+** SGD: 모든 방향을 탐색하지 않고 확률에 기반해서 몇몇곳만 빠르게 가봄
+** Adam: 보폭과 방향을 적절하게 잘 분배함. 과거 맥박을 기준으로 올바른 방향을 찾아감 
+
+![307bc8cd-f05a-48d5-8adb-ddeedf76b7651](https://user-images.githubusercontent.com/88616282/201087875-ea61d85a-da2f-482a-8183-a189e11630f0.png)
 
 ```python
-# Learning rate(lr)를 바꾸면서 실험하기
+
 model = Sequential([Dense(1)])
 
-# Optimizer를 바꾸면서 실험하기
-# 손실함수(loss)를 mean_absolute_error 로 바꿔서 실험하기
 
 model.compile(loss='mean_squared_error',optimizer=SGD(lr=0.01))
 
