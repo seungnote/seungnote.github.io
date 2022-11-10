@@ -1,3 +1,19 @@
+---
+title:  "[Python] 머신러닝_선형회귀 with Tensorflow&Keras" 
+
+categories:
+  - ADP
+tags:
+  - [Python,ADP,machine_learing]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-08
+
+---
+
+
 ## 선형회귀(Tensorflow)
 
 -최근 Tensorflow보다 Keras를 사용함 
