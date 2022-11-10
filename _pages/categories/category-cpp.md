@@ -1,7 +1,7 @@
 ---
-title: "ADP실기"
+title: "ADP"
 layout: archive
-permalink: categories/cpp
+permalink: categories/ADP
 author_profile: true
 sidebar_main: true
 ---
