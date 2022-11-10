@@ -20,11 +20,11 @@ minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "da
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "SeungNote"
+title                    : "Note"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "HSH"
-description              : "공부 기록"
+name                     : "SH"
+description              : "just note"
 url                      : "https://seungnote.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "seungnote.github.io/" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -108,9 +108,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "HSH"
+  name             : "SH"
   avatar           : "/image.jpg"
-  bio              : "공부기록"
+  bio              : "just note"
   location         : "Everywhere"
   email            :
   links:
