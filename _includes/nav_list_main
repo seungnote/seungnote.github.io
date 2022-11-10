@@ -5,10 +5,10 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
       <li>
-            📂 Total{{sum}}
+            📂 Total {{sum}} posts
       </li>
       <li>
-        <span class="nav__sub-title">ADP</span>
+        <span class="nav__sub-title">⭐️ ADP</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
@@ -31,7 +31,7 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">TEST</span>
+        <span class="nav__sub-title">⭐️ TEST</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "test" %}
