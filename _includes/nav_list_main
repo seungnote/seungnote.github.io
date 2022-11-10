@@ -12,21 +12,21 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
-                        <li><a href="/categories/cpp" class="">Python ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Python" class="">Python ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "R" %}
-                        <li><a href="/categories/stl" class="">R ({{category[1].size}})</a></li>
+                        <li><a href="/categories/R" class="">R ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "quiz" %}
-                        <li><a href="/categories/stl" class=""> 예제 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/quiz" class=""> QUIZ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
