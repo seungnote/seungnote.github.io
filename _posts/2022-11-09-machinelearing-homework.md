@@ -2,7 +2,7 @@
 title:  "[Python] 머신러닝_kaggleQUIZ" 
 
 categories:
-  - ADP
+  - Python
 tags:
   - [Python,ADP,machine_learing]
 
