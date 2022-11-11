@@ -1,3 +1,19 @@
+---
+title:  "[Python] 데이터핸들링-조건에 따른 행/열 선택Quiz" 
+
+categories:
+  - Python
+tags:
+  - [Python,ADP,quiz]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-12
+
+---
+
+
 # 과제 3 
     데이터 : "7.세종시_아파트(전월세)_실거래가.csv"
     1) 단지명 중  '해밀마을 2단지'인 row 삭제 
