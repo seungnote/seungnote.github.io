@@ -1,3 +1,19 @@
+---
+title:  "[Python] 데이터핸들링-조건에 따른 행/열 선택" 
+
+categories:
+  - Python
+tags:
+  - [Python,ADP]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-11
+
+---
+
+
 ## 조건에 따른 row/column선택
 
 boolean(T/F)를 쓰게되는데 F일때 기준으로 값을 가져오는게 가능해서 유용함
