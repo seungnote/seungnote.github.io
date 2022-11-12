@@ -1,3 +1,18 @@
+---
+title:  "[Python] 데이터핸들링-데이터 정렬(sort_value)QUIZ" 
+
+categories:
+  - Python
+tags:
+  - [Python,ADP,quiz,class101]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-12
+
+---
+
 # 과제 2-4 
 
 ## players_20.csv데이터에서 height_cm, weight_kg 의 중위값(median)을 출력하세요.
