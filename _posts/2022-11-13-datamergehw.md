@@ -1,4 +1,17 @@
-# 과제 2-5
+---
+title:  "[Python] 데이터핸들링-데이터 결합(concat,merge)QUIZ" 
+
+categories:
+  - Python
+tags:
+  - [Python,ADP,class101,quiz]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-13
+
+---
 
 ##  players_19.csv와 players_20.csv 데이터를 행결합해서 master data를 만드세요 
 
