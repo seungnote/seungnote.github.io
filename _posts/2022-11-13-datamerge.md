@@ -1,3 +1,17 @@
+---
+title:  "[Python] 데이터핸들링-데이터 결합(concat,merge)" 
+
+categories:
+  - Python
+tags:
+  - [Python,ADP,class101]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-13
+
+---
 데이터 결합
 
 ->머신러닝, 통계분석, 라이브러리에서 요구하는 데이터 형식이 있는데 그렇게 만드는 방법중 하나 
