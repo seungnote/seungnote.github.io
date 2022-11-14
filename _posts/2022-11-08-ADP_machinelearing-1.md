@@ -13,6 +13,7 @@ date: 2022-11-08
 
 ---
 ## 머신러닝이란?
+
 1. 회귀(연속적 문제 해결시)
 -사람의 얼굴 사진을 보고 몇살인지 예측하는거
 -Input(얼굴사진)&Output(나이예측) 중요
@@ -21,6 +22,7 @@ date: 2022-11-08
 -전달 공부시간을 가지고 과목 이수여부 또는 성적을 예측한다 
 
 3. 회귀&분류
+
 (1)지도학습(회귀/분류)
 -Input사과 사진/ Output 사과/ 라벨링(annotation=정답 입력하는 작업)
 
@@ -34,19 +36,28 @@ date: 2022-11-08
 
 ## 선형회귀(Tensorflow)
 **H(x)=Wx + b(가설)**
+
 -Weight와 Bias를 알아야봐야하는데 이걸 기계로 시킨다 
+
 -ex)커피 마신 잔 수로(Input) 시험점수를(Output) 예측할 수 있을까? 
+
 -점과 직선의 거리는 짧아야함(=mean squared error=평균제곱 오차)
+
 -cost Function(손실함수) 값이 작아야함 
 
 ![화면 캡처 2022-11-14 220725](https://user-images.githubusercontent.com/88616282/201667958-a5841d84-ec52-406a-b130-9a52e0424a9d.png)
 
 
 -최근 Tensorflow보다 Keras를 사용함 
+
 -Tensorflow는 소숫점을 주로 씀 
+
 -버젼 v1으로 실행한다 
+
 -사용할 데이터셋 설정(x_data, y_data)
+
 -데이터셋 넣어줄 공간 생성(X,Y placeholder)
+
 -Weight& Bias 설정 
 
 ```python
