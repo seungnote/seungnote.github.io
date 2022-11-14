@@ -24,6 +24,7 @@ date: 2022-11-14
 ![2](https://user-images.githubusercontent.com/88616282/201676041-b359bcce-cd8d-492c-86fb-45203f0c85ec.png)
 
 Logistic Function 곡선형태로 그리니깐 구분이 가능해 계산 자체는 선형 회귀와 똑같지만 출력에 sigmoid를 붙여서 H(x)는 0~1사이 값을 가지게끔함. 
+
 ![4](https://user-images.githubusercontent.com/88616282/201676310-b603b504-8cc6-4e1e-bcb3-b8174a81edc9.png)
 
 -확률로써 구분을 하게됨
