@@ -1,3 +1,17 @@
+---
+title:  "[Python] 머신러닝_이진논리회귀 실습" 
+
+categories:
+  - Python
+tags:
+  - [Python,ADP,machine_learing]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-16
+
+---
 ## 이진 논리회귀(Logistic regression)
 -0이냐 1이냐 구분하는 논리회귀
 
