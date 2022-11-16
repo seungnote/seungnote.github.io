@@ -102,3 +102,45 @@ Logistic Function 곡선형태로 그리니깐 구분이 가능해 계산 자체
 
 ![image](https://user-images.githubusercontent.com/88616282/202184406-20c71063-cdd3-48d2-a46f-44957b413abd.png)
 
+-직관적이고 쉬운데 성능도 괜찮음 
+
+## 머신러닝 모델_의사결정나무(Decision Tree)
+![image](https://user-images.githubusercontent.com/88616282/202184639-7dd4bb9f-4f3a-4ab5-852d-c144fd4f4d80.png)
+-스무고개와 같음
+
+## 머신러닝 모델_랜덤포레스트(Random Forest)
+-위의 의사결정나무를 여러개를 모아둔거 
+![image](https://user-images.githubusercontent.com/88616282/202184969-9eb76af5-3f47-48c9-8e22-ae04b96d9ad0.png)
+
+(1)Majority Vote 
+
+(2)평균
+
+## 전처리(Preprocessing)
+
+-너무 벗어난 값들은 지워주는 일 또는 단위 맞춰주기 (데이터 정제작업)
+
+-코로나 확진자가 너무 많은 중국/미국 같은 경우 지워주는 작업(아웃라이어 제거)
+
+-왜 전처리를 할까?
+
+예를 들어서 부동산 데이터 분석을 한다고 보자(집 넓이/준공 연도/층수)->범위 단위가 다 달라 
+
+학습속도를 빠르게하고 지역해local minimum에 빠지는걸 방지함
+
+## 정규화(Normalization)
+-데이터를 0에서 1사이로 만듬. 99퍼 모델이 사용함 
+
+-예시: 100점만점에서 50점(A) & 500점 만점에서 50점(B) -> 0.5(A) & 0.1(B) -> A가 더 잘한거 
+
+## 표준화(Standardization)
+-데이터의 분포를 정규분포로 바꿔줌 
+
+-데이터 평균은 0이고 표준편차는 1이 되도록 만들어줌 
+![image](https://user-images.githubusercontent.com/88616282/202186635-a34eaf94-9080-4b84-8a1a-d582aa9da68e.png)
+
+![image](https://user-images.githubusercontent.com/88616282/202186742-275455e7-f4a0-4465-aa66-3e4c7e27e729.png)
+
+
+
+
