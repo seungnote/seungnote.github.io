@@ -76,3 +76,16 @@ Logistic Function 곡선형태로 그리니깐 구분이 가능해 계산 자체
 (1)softmax를 써서
 
 (2)cross entropy 확률분포 그래프 계산해서 최소화 
+
+## 머신러닝 모델_SVM
+-Support Vertor Machine
+-강아지와 고양이를 각 특징별로 분류를 한다 
+-선을 긋는 것이 굉장히 중요하고 선 기준으로 거리가 최대가 되도록 구해야함
+-margin이 클수록 좋다고보면됨 
+![1](https://user-images.githubusercontent.com/88616282/202183568-907c6819-06d0-4f2b-8d20-e13a2bcc8794.png)
+-문제점: 갑자기 충성심(강아지 특징)이 강한 고양이가 등장한다
+->다리 길이나 울음소리 높낮이같은 특징Feature를 늘리면됨
+->그리고 3차원으로 만들면됨
+->결론: Feature가 늘수록 성능이 좋아진다 
+
+
