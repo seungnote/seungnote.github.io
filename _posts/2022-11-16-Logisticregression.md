@@ -355,9 +355,8 @@ sns.countplot(x='Sex',hue='2urvived',data=df)
 
 
 
-    
-![png](output_8_1.png)
-    
+    ![output_8_1](https://user-images.githubusercontent.com/88616282/202196434-55a995f5-9cbf-40c2-8afc-13d91e0522c2.png)
+
 
 
 
@@ -375,8 +374,8 @@ sns.countplot(x=df['2urvived'])
 
 
     
-![png](output_9_1.png)
-    
+![output_9_1](https://user-images.githubusercontent.com/88616282/202196448-bb7b9f20-505b-46af-970d-22b5dd8271b5.png)
+
 
 
 ## 비어있는 행 확인 후 행 제거
