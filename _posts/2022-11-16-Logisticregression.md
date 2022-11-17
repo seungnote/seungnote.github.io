@@ -349,15 +349,7 @@ sns.countplot(x='Sex',hue='2urvived',data=df)
 
 
 
-
-    <AxesSubplot:xlabel='Sex', ylabel='count'>
-
-
-
-
-    ![output_8_1](https://user-images.githubusercontent.com/88616282/202196434-55a995f5-9cbf-40c2-8afc-13d91e0522c2.png)
-
-
+![output_8_1](https://user-images.githubusercontent.com/88616282/202459517-2fd08b83-f77a-4d9d-a9fe-c00efc8fd308.png)
 
 
 ```python
