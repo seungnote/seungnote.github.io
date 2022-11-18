@@ -2,7 +2,7 @@
 title:  "[Python] 데이터핸들링-데이터 정렬(sort_value)QUIZ" 
 
 categories:
-  - Python
+  - quiz
 tags:
   - [Python,ADP,quiz,class101]
 
