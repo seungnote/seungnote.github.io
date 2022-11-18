@@ -2,7 +2,7 @@
 title:  "[Python] 데이터핸들링-데이터 결합(concat,merge)QUIZ" 
 
 categories:
-  - Python
+  - quiz
 tags:
   - [Python,ADP,class101,quiz]
 
