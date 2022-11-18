@@ -2,7 +2,7 @@
 title:  "[Python] 데이터핸들링-조건에 따른 행/열 선택QUIZ" 
 
 categories:
-  - Python
+  - quiz
 tags:
   - [Python,ADP,quiz,class101]
 
