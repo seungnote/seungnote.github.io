@@ -1,3 +1,19 @@
+---
+title:  "[Python] 데이터핸들링-group by QUIZ" 
+
+categories:
+  - quiz
+tags:
+  - [Python,ADP,class101,quiz]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-22
+
+---
+
+
 # 과제 3-1 Groupby & crosstab
 
 ## 데이터 : "7.세종시_아파트(전월세)_실거래가.csv"
