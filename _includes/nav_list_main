@@ -8,7 +8,7 @@
             📂 Total {{sum}} posts
       </li>
       <li>
-        <span class="nav__sub-title">⭐️ ADP</span>
+        <span class="nav__sub-title">⭐️ 데이터분석</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
