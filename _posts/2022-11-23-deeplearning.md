@@ -1,5 +1,5 @@
 ---
-title:  "[Python] 머신러닝_딥러닝 개념" 
+title:  "[Python] 머신러닝_딥러닝개념" 
 
 categories:
   - Python
