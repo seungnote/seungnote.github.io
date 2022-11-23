@@ -1,10 +1,10 @@
 ---
-title:  "[Python] 머신러닝_딥러닝" 
+title:  "[Python] 머신러닝_딥러닝 개념" 
 
 categories:
   - Python
 tags:
-  - [Python,ADP,machine_learing]
+  - [Python,ADP,machine_learning]
 
 toc: true
 toc_sticky: true
@@ -109,5 +109,25 @@ ex) 입력층 4 첫번째 은닉층 8 두 번째 은닉층 16 세 번째 은닉�
 ## 딥러닝에서 사용되는 스킬
 
 ★Data augmentation (데이터 증강기법)
--Overfitting 해결방법 1)데이터 개수를 늘리면 됨 
+-Overfitting 해결방법 1)데이터 개수를 늘리면 됨 근데 실제로는 어렵기때문에 **원본을 여러 가지 방법으로 복사를 함**
+![image](https://user-images.githubusercontent.com/88616282/203538250-d954230b-ee21-4ace-99eb-42053cf6c4b6.png)
 
+★Dropout (드랍아웃)
+-마찬가지로 overfitting해결방법. 각 노드들이 이어진 선을 빼서 없애버린다는 의미. 각 배치마다 랜덤한 노드를 끊어버림
+![image](https://user-images.githubusercontent.com/88616282/203538894-a2e298b8-884f-49ee-a98b-c63258d8b5bb.png)
+![image](https://user-images.githubusercontent.com/88616282/203539040-cb53d86e-41f6-4398-9c95-49d525134886.png)
+
+★Ensemble (앙상블) ~랜덤포레스트
+-여러개의 딥러닝 모델을 만들어 각각 학습시킨 후 각각의 모델에서 나온 출력을 기반으로 투표를 하는 방법(실제 투표한다는게 아니라 평균값을 내거나 최고값을 뽑아내기도하고 선택에 따라 달라짐)
+![image](https://user-images.githubusercontent.com/88616282/203539200-c1b3861e-1569-496e-8ce3-d984d36dc71a.png)
+
+★Learning rate decay (Learning rate schedules)
+-local minimum에 빠르게 도달하고 싶을 때 사용
+
+-global minimum 도달은 어려움(완전 정답이라는 뜻임)
+
+-처음에 lr을 크게했다가 줄이는게 좋은 방법임 
+![image](https://user-images.githubusercontent.com/88616282/203539661-f47ab5dd-b9e2-43da-a0a6-3341cd9f0ac0.png)
+
+-에러가 한번씩 팍팍 줄어
+![image](https://user-images.githubusercontent.com/88616282/203540125-c5bc6e48-f8ae-462f-9a8d-44537c65e8d3.png)
