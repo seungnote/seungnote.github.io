@@ -4,7 +4,7 @@ title:  "[Python] 머신러닝_선형회귀 with Tensorflow&Keras"
 categories:
   - Python
 tags:
-  - [Python,ADP,machine_learing]
+  - [Python,ADP,machine_learning]
 
 toc: true
 toc_sticky: true
