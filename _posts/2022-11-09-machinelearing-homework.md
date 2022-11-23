@@ -4,7 +4,7 @@ title:  "[Python] 머신러닝_kaggleQUIZ"
 categories:
   - quiz
 tags:
-  - [Python,ADP,machine_learing,quiz]
+  - [Python,ADP,machine_learning,quiz]
 
 toc: true
 toc_sticky: true
