@@ -4,7 +4,7 @@ title:  "[Python] 머신러닝_논리회귀.다항논리회귀"
 categories:
   - Python
 tags:
-  - [Python,ADP,machine_learing]
+  - [Python,ADP,machine_learning]
 
 toc: true
 toc_sticky: true
