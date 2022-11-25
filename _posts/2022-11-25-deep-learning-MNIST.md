@@ -461,10 +461,7 @@ plt.snow()
     AttributeError: module 'matplotlib.pyplot' has no attribute 'snow'
 
 
-
-    
-![png](output_7_2.png)
-    
+![output_7_2](https://user-images.githubusercontent.com/88616282/204024044-855a6ce9-090c-4f39-bdbf-78bce88ca98c.png)
 
 
 ## 데이터 전처리(입력 출력 나누기)
@@ -501,8 +498,9 @@ plt.show()
 
 
     
-![png](output_11_0.png)
-    
+
+    ![output_11_0](https://user-images.githubusercontent.com/88616282/204024075-564fdae4-1ccd-4bd6-86f6-9cea14dcb56d.png)
+
 
 
 ## One-hot encoding
@@ -530,9 +528,8 @@ plt.show()
 ```
 
 
-    
-![png](output_14_0.png)
-    
+    ![output_14_0](https://user-images.githubusercontent.com/88616282/204024100-7e707691-f3d2-41c6-94f3-e6d41114642e.png)
+
 
 
 ## 일반화 Normalization
@@ -681,7 +678,8 @@ plt.plot(history.history['val_loss'])
 
 
     
-![png](output_22_1.png)
+![output_22_1](https://user-images.githubusercontent.com/88616282/204024146-19aea3ed-a8fc-4b01-8504-88eb7bf7b83f.png)
+
     
 
 
@@ -702,8 +700,8 @@ plt.plot(history.history['val_acc'])
 
 
     
-![png](output_23_1.png)
-    
+![output_23_1](https://user-images.githubusercontent.com/88616282/204024118-5b3d576f-86c3-49ea-a94a-35f466f020e4.png)
+
 
 
 
