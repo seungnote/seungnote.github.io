@@ -1,3 +1,17 @@
+---
+title:  "[Python] 머신러닝_딥러닝 MNIST 실습" 
+
+categories:
+  - Python
+tags:
+  - [Python,ADP,machine_learning]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-26
+
+---
 ## Sign Language MNIST(수화 알파벳) 실습
 
 https://www.kaggle.com/datamunge/sign-language-mnist
