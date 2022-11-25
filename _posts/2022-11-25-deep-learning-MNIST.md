@@ -461,8 +461,7 @@ plt.snow()
     AttributeError: module 'matplotlib.pyplot' has no attribute 'snow'
 
 
-![output_7_2](https://user-images.githubusercontent.com/88616282/204024044-855a6ce9-090c-4f39-bdbf-78bce88ca98c.png)
-
+![output_11_0](https://user-images.githubusercontent.com/88616282/204024268-61d36229-b9e4-450d-93fc-339bbd17a6e7.png)
 
 ## 데이터 전처리(입력 출력 나누기)
 
@@ -499,9 +498,7 @@ plt.show()
 
     
 
-    ![output_11_0](https://user-images.githubusercontent.com/88616282/204024075-564fdae4-1ccd-4bd6-86f6-9cea14dcb56d.png)
-
-
+![output_14_0](https://user-images.githubusercontent.com/88616282/204024290-151d96cb-9d38-48a7-937e-19710caff326.png)
 
 ## One-hot encoding
 
