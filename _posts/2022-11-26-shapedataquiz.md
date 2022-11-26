@@ -1,3 +1,19 @@
+---
+title:  "[Python] 데이터핸들링-데이터 모양변경(pivot) QUIZ" 
+
+categories:
+  - quiz
+tags:
+  - [Python,ADP,quiz,class101]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-26
+
+---
+
+
 <h1>Table of Contents<span class="tocSkip"></span></h1>
 <div class="toc"><ul class="toc-item"><li><span><a href="#과제-3-2-melt-&amp;-pivot-table" data-toc-modified-id="과제-3-2-melt-&amp;-pivot-table-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>과제 3-2 melt &amp; pivot table</a></span><ul class="toc-item"><li><span><a href="#데이터-:-'식품소비.csv'" data-toc-modified-id="데이터-:-'식품소비.csv'-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>데이터 : '식품소비.csv'</a></span></li><li><span><a href="#y값을-id_vars로-놓고-column들이-category로-바뀌도록-테이블을-구성하세요" data-toc-modified-id="y값을-id_vars로-놓고-column들이-category로-바뀌도록-테이블을-구성하세요-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>y값을 id_vars로 놓고 column들이 category로 바뀌도록 테이블을 구성하세요</a></span></li><li><span><a href="#아래와-같이-category,-y-값에-따른-평균을-구하세요" data-toc-modified-id="아래와-같이-category,-y-값에-따른-평균을-구하세요-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>아래와 같이 category, y 값에 따른 평균을 구하세요</a></span></li><li><span><a href="#아래와-같이-category,-y-값에-따른-표준편차를-구하세요" data-toc-modified-id="아래와-같이-category,-y-값에-따른-표준편차를-구하세요-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>아래와 같이 category, y 값에 따른 표준편차를 구하세요</a></span></li></ul></li></ul></div>
 
