@@ -537,7 +537,7 @@ plt.show()
 ```
 
 
-    ![output_14_0](https://user-images.githubusercontent.com/88616282/204024100-7e707691-f3d2-41c6-94f3-e6d41114642e.png)
+![output_14_0](https://user-images.githubusercontent.com/88616282/204024100-7e707691-f3d2-41c6-94f3-e6d41114642e.png)
 
 
 
