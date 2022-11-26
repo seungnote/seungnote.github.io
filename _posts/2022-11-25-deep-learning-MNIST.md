@@ -15,6 +15,8 @@ date: 2022-11-26
 ## Sign Language MNIST(수화 알파벳) 실습
 
 https://www.kaggle.com/datamunge/sign-language-mnist
+![111](https://user-images.githubusercontent.com/88616282/204070025-0d5cf5be-7b30-4d5d-851c-a473cc7361de.png)
+
 
 
 ```python
