@@ -1,3 +1,18 @@
+---
+title:  "[Python] 데이터핸들링-데이터 모양변경(pivot)" 
+
+categories:
+  - Python
+tags:
+  - [Python,ADP,class101]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-26
+
+---
+
 # 데이터 모양 변경(pivot)
 
 ## 데이터 재구조화(melt) 행으로 전환
