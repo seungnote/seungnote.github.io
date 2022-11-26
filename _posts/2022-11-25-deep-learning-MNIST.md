@@ -474,8 +474,8 @@ plt.snow()
 
     AttributeError: module 'matplotlib.pyplot' has no attribute 'snow'
 
+![output_7_2](https://user-images.githubusercontent.com/88616282/204069848-dd0b77d3-21f3-4d8a-8ea8-daedab951b92.png)
 
-![output_11_0](https://user-images.githubusercontent.com/88616282/204024268-61d36229-b9e4-450d-93fc-339bbd17a6e7.png)
 
 ## 데이터 전처리(입력 출력 나누기)
 
@@ -509,10 +509,8 @@ plt.show()
 # 6=G 에 해당되는 라벨이라는거 
 ```
 
+![output_11_0](https://user-images.githubusercontent.com/88616282/204069828-a3caceec-b9aa-4bf7-9dc9-1cf3b775e180.png)
 
-    
-
-![output_14_0](https://user-images.githubusercontent.com/88616282/204024290-151d96cb-9d38-48a7-937e-19710caff326.png)
 
 ## One-hot encoding
 
