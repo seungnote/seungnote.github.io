@@ -4,7 +4,7 @@ title:  "[Python] 데이터핸들링_문자열데이터 변환str"
 categories:
   - Python
 tags:
-  - [Python,ADP,class101]]
+  - [Python,ADP,class101]
 
 toc: true
 toc_sticky: true
@@ -12,6 +12,7 @@ toc_sticky: true
 date: 2022-11-26
 
 ---
+
 
 # 문자열 변환
 
