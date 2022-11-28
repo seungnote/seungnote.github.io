@@ -334,6 +334,8 @@ plt.show()
 
 **axis=1 옆/열 
 
+![image](https://user-images.githubusercontent.com/88616282/204309214-fb67d9b0-151d-4ff2-bc85-1c7a393aee64.png)
+
 
 
 ```python
