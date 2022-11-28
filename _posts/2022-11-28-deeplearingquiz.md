@@ -1,3 +1,18 @@
+---
+title:  "[Python] 머신러닝_딥러닝QUIZ" 
+
+categories:
+  - quiz
+tags:
+  - [Python,ADP,machine_learning,quiz]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-28
+
+---
+
 # 손글씨 예측하는 머신러닝 만들기(0~9)
 
 !kaggle datasets download -d oddrationale/mnist-in-csv
@@ -309,9 +324,8 @@ plt.show()
     
 
 
-    
-![png](output_12_1.png)
-    
+![output_12_1](https://user-images.githubusercontent.com/88616282/204263053-21c4183b-9da9-4bf4-9538-7cdba41b0932.png)
+
 
 
 ## 데이터전처리(입력 출력 나누기)
@@ -351,9 +365,8 @@ plt.show()
 
 
     
-![png](output_16_0.png)
     
-
+![output_16_0](https://user-images.githubusercontent.com/88616282/204263139-3a6cd3c2-17a5-44ba-9709-c2cc194c3926.png)
 
 ## One-hot encoding(2차원 만들기)-> 진행생략
 
@@ -378,8 +391,8 @@ plt.show()
 ```
 
 
-    
-![png](output_19_0.png)
+![output_19_0](https://user-images.githubusercontent.com/88616282/204263115-ac64ee7d-671c-4fb8-af02-60eef8ea15e6.png)
+
     
 
 
@@ -518,8 +531,8 @@ plt.plot(history.history['val_loss'])
 
 
 
-    
-![png](output_27_1.png)
+![output_27_1](https://user-images.githubusercontent.com/88616282/204263183-8af8e60c-4e5a-42e5-9290-c421a0401a60.png)
+
     
 
 
@@ -539,6 +552,5 @@ plt.plot(history.history['val_acc'])
 
 
     
-![png](output_28_1.png)
-    
+![output_28_1](https://user-images.githubusercontent.com/88616282/204263206-036b5f9a-4179-4c17-90e7-259b6e5f57e1.png)
 
