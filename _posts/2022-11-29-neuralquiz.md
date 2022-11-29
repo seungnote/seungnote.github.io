@@ -1,3 +1,19 @@
+---
+title:  "[Python] 머신러닝_CNN실습" 
+
+categories:
+  - Python
+tags:
+  - [Python,ADP,machine_learning]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-29
+
+---
+
+
 ```python
 import os
 os.environ['KAGGLE_USERNAME'] = 'seungnote' 
@@ -258,8 +274,8 @@ plt.show()
 
 
     
-![png](output_5_1.png)
-    
+![output_5_1](https://user-images.githubusercontent.com/88616282/204547973-a1fa9569-21cb-4f03-ae5b-d473c8150d6e.png)
+
 
 
 reshape부분이 달라짐 
@@ -319,7 +335,7 @@ plt.show()
 
 
     
-![png](output_11_0.png)
+![output_11_0](https://user-images.githubusercontent.com/88616282/204548006-5101f0e8-d15a-4b48-8077-cf03c9e130b3.png)
     
 
 
@@ -379,8 +395,8 @@ plt.show()
 
 
     
-![png](output_15_0.png)
-    
+
+![output_15_0](https://user-images.githubusercontent.com/88616282/204548042-8282d58e-6bf5-4429-a8c5-8e3419e9050e.png)
 
 
 ## 네트워크 구성 
@@ -532,8 +548,8 @@ axes[1].plot(history.history['val_acc'])
 
 
     
-![png](output_21_1.png)
-    
+![output_21_1](https://user-images.githubusercontent.com/88616282/204548098-f185b624-2587-4b19-a356-23093881671c.png)
+
 
 
 # 이미지 증강 기법
@@ -589,8 +605,9 @@ plt.show()
 
 
     
-![png](output_27_0.png)
-    
+
+![output_27_0](https://user-images.githubusercontent.com/88616282/204548125-dbbb4f0a-faca-4b68-a28a-0791879b3fb2.png)
+
 
 
 ## 네트워크 구성하기
@@ -728,8 +745,6 @@ axes[1].plot(history.history['val_acc'])
 
 
 
-
-    
-![png](output_32_1.png)
+![output_32_1](https://user-images.githubusercontent.com/88616282/204548155-60ef289e-0c2f-4d87-9e74-1a25220a70ff.png)
     
 
