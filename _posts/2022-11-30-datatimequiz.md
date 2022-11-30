@@ -1,3 +1,18 @@
+---
+title:  "[Python] 데이터핸들링-날짜데이터(datatime)QUIZ" 
+
+categories:
+  - quiz
+tags:
+  - [Python,ADP,quiz,class101]
+
+toc: true
+toc_sticky: true
+
+date: 2022-11-30
+
+---
+
 # 날짜 데이터 전처리 과제 
 - 데이터 : "6.세종시_오피스텔(매매)_실거래가.csv"
 
