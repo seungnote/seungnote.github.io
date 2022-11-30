@@ -64,7 +64,7 @@
         {% endif %}
 
         {% for tag in site.tags %}
-        {% assign temp = tag[1].size | minus: min | times: 36 | divided_by: diff %}
+        {% assign temp = tag[1].size | minus: min | times: 16 | divided_by: diff %}
         {% assign base = temp | divided_by: 4 %}
         {% assign remain = temp | modulo: 4 %}
         {% if remain == 0 %}
