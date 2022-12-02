@@ -116,7 +116,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:onewinhae@gmail.com"
+      url: "mailto:onewinhae@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -144,7 +144,7 @@ footer:
       # url:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:onewinhae@gmail.com"
+      url: "mailto:onewinhae@naver.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/seungnote/seungnote.github.io"
