@@ -1,3 +1,18 @@
+---
+title:  "[Python] 데이터전처리-표준화.정규화QUIZ" 
+
+categories:
+  - quiz
+tags:
+  - [Python,ADP,quiz,class101]
+
+toc: true
+toc_sticky: true
+
+date: 2022-12-02
+
+---
+
 ```python
 import pandas as pd 
 from sklearn.model_selection import train_test_split
