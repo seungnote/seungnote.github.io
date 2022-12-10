@@ -1,0 +1,507 @@
+### 3절. 막대 그래프(범주형)
+
+pyplot의 bar() 함수를 사용하여 막대그래프를 그릴 수 있음
+
+> plt.bar(x, height, width=0.8, bottom=None, align='center', data=None, color='black', edgecolor='black')
+
+x=value height=value
+
+수평으로 표현된 막대 그래프는 barh() 함수로 그린다
+
+> plt.barh(x, height, width=0.8, bottom=None, align='center', data=None, color='black', edgecolor='black')
+
+<br>
+
+<b>[예제]</b> 
+
+fifa20 데이터의 overall 변수는 선수의 능력치를 나타낸다. <br>
+preferred_foot 변수는 선호하는 발을 의미하며, 총 2개의 범주로 이루어져 있다<br>
+두 범주형 변수의 각 레벨에 속하는 데이터의 개수를 막대그래프로 나타내어라
+
+
+```python
+import pandas as pd 
+import matplotlib.pyplot as plt 
+
+fifa20 = pd.read_csv('D:/anaconda/00.studying/data/players_20.csv')
+fifa20 = fifa20.head(1000)
+```
+
+
+```python
+overall_cnt =fifa20['overall'].value_counts()
+preferred_foot_cnt = fifa20['preferred_foot'].value_counts().sort_index()
+```
+
+
+```python
+overall_cnt
+```
+
+
+
+
+    78    239
+    79    185
+    80    157
+    82     92
+    81     82
+    83     80
+    84     49
+    85     35
+    86     18
+    88     17
+    87     15
+    89     13
+    77      8
+    90      4
+    91      3
+    93      1
+    92      1
+    94      1
+    Name: overall, dtype: int64
+
+
+
+
+```python
+preferred_foot_cnt
+```
+
+
+
+
+    Left     232
+    Right    768
+    Name: preferred_foot, dtype: int64
+
+
+
+
+```python
+# 두개의 플롯을 그려야 하므로 두 개의 서브플롯을 선언
+# fig는 플롯이 나타날 전체 figure, axs[n]은 n번째 서브플롯을 나타냄
+
+# 2*2=4개의 그래프 그리겠다는거. 
+fig, axs = plt.subplots(2, 2,figsize=(14,10))
+fig.suptitle('Bar plot')
+
+axs[0][0].bar(overall_cnt.index, overall_cnt.values)
+axs[0][0].set_title('overall Count')
+axs[0][0].set_ylabel('Count')
+
+axs[1][1].bar(preferred_foot_cnt.index, preferred_foot_cnt.values)
+axs[1][1].set_title('preferred_foot Count')
+axs[1][1].set_ylabel('Count')
+
+plt.show()
+```
+
+
+    
+![png](output_5_0.png)
+    
+
+
+left숫자가 적기때문에 oversampling을 해야한다 같은 설명하는게 중요함 
+
+<b>[예제]</b> 여러 개의 범주형 변수를 막대그래프에 표현하기
+
+fifa20 데이터의 overall preferred_foot 변수의 범주별 데이터 개수를 막대그래프로 한 번에 표현하고 범례를 함께 나타내기
+
+
+```python
+import numpy as np
+
+#crosstab(index, columns)
+table = pd.crosstab(fifa20['overall'], fifa20['preferred_foot'])
+table
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>preferred_foot</th>
+      <th>Left</th>
+      <th>Right</th>
+    </tr>
+    <tr>
+      <th>overall</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>77</th>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>51</td>
+      <td>188</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>42</td>
+      <td>143</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>33</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>21</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>20</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>24</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>11</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>13</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>3</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>4</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>5</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>2</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+fig, axs = plt.subplots(1,2,figsize=(20,6))
+
+
+# 두 개의 플롯을 선언하고 그 중 하나에서 bottom 인수를 사용하여 다른 값 아래에 위치하게 함
+
+# index는 같고 value가 다름 label=범례 
+axs[0].bar(table['Left'].index, table['Left'].values, label='Left')
+axs[0].bar(table['Right'].index, table['Right'].values,bottom=table['Left'].values, label='Right')
+
+axs[0].set_ylabel('Counts')
+axs[0].set_title('Stack 2 variables on 1 bar plot')
+axs[0].legend()
+
+# 범주의 개수(ind)를 세어 플롯의 x 인자에 임시 할당하고 x인자에서 두께를 감산
+# 각 bar plot에 두께를 지정
+
+idx = table['Right'].index
+ind = np.arange(1, len(idx)+1)
+width = 0.4
+axs[1].bar(ind - width/2, table['Left'].values, width, label='Left')
+axs[1].bar(ind + width/2, table['Right'].values, width, label='Right')
+axs[1].set_xticks(ind) # set_xticklabels 호출 이전에 선행해서 호출되어야 함 (눈금 고정)
+axs[1].set_xticklabels(idx) # bar 플롯 x축의 범주를 문자열 값으로 변경
+axs[1].set_ylabel('count')
+axs[1].set_title('Separate bar with each variable')
+axs[1].legend()
+
+plt.show()
+```
+
+
+    
+![png](output_9_0.png)
+    
+
+
+### 4절. 히스토그램(연속형/순서 못바꿈)
+
+도수별 분포를 나타내는 도수분포표를 그래프로 그린 것
+
+<div style="font-weight: bold; font-size: 120%; margin-left:30px"> 
+    <table align="left" margin:50 font-size: 120%>
+        <tr>
+            <td style="text-align: left;" rowspan="2">막대그래프</td>
+            <td style="text-align: left;"><span style='color: #DC143C'>범주형</span>으로 구분된 변수의 범주별 데이터 수를 구한 것</td>
+        </tr>
+        <tr>
+            <td style="text-align: left;">범주의 순서를 의도에 따라 변경 가능<td>
+        </tr>
+        <tr>
+            <td style="text-align: left;" rowspan="2">히스토그램</td>
+            <td style="text-align: left;"><span style='color: #DC143C'>연속된 수</span>를 일정한 구간으로 나눈 후 구간별 데이터의분포를 그래프로 표현한 것</td>
+        </tr>
+        <tr>
+            <td style="text-align: left;">임의로 범주의 순서를 바꿀 수 없음<td>
+        </tr>
+    </table>
+</div>
+
+> plt.hist(x, bins=None, range=None, density=False, color=None, data=None)
+
+bins : 히스토그램의 구간의 개수 정의<br>
+range : bin의 상한값과 하한값 (x.min(), x.max()) 형태로 선언<br>
+density : True이면 확률밀도함수를 그리고 반환
+
+<br>
+
+<b>[예제]</b>
+
+fifa20 데이터의 wage_eur 변수에 대해 막대 구간의 개수를 지정하지 않은 히스토그램과 구간의 개수를 5로 지정한 히스토그램 그리기
+
+
+```python
+fig, axs = plt.subplots(1,2,figsize=(18,5))
+
+axs[0].hist('wage_eur',data=fifa20)
+axs[1].hist('wage_eur',bins=5, data=fifa20)
+
+plt.show()
+```
+
+
+    
+![png](output_12_0.png)
+    
+
+
+preferred_foot 범주형 변수 <br>
+'height_cm','weight_kg','overall': 수치형 변수 ->히스토그램 가능
+
+
+```python
+fifa20[['preferred_foot','height_cm','weight_kg','overall']]
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>preferred_foot</th>
+      <th>height_cm</th>
+      <th>weight_kg</th>
+      <th>overall</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Left</td>
+      <td>170</td>
+      <td>72</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Right</td>
+      <td>187</td>
+      <td>83</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Right</td>
+      <td>175</td>
+      <td>68</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Right</td>
+      <td>188</td>
+      <td>87</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Right</td>
+      <td>175</td>
+      <td>74</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>995</th>
+      <td>Right</td>
+      <td>177</td>
+      <td>66</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <th>996</th>
+      <td>Right</td>
+      <td>191</td>
+      <td>86</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <th>997</th>
+      <td>Right</td>
+      <td>183</td>
+      <td>78</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <th>998</th>
+      <td>Left</td>
+      <td>183</td>
+      <td>62</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <th>999</th>
+      <td>Right</td>
+      <td>168</td>
+      <td>66</td>
+      <td>77</td>
+    </tr>
+  </tbody>
+</table>
+<p>1000 rows × 4 columns</p>
+</div>
+
+
+
+수치형으로만 이뤄진 그래프 만들게됨<br>
+범주형이었던 preferred_foot없어짐 <br>
+<br>
+'height_cm','weight_kg'는 정규형 분포+양의 상관관계(키와 몸무게는 비례한다) <br>
+'overall'는 편향된 데이터임 <br>
+->상위 1000명만 가지고 데이터를 추출했기때문에 그럼 
+
+
+```python
+from pandas.plotting import scatter_matrix
+
+scatter_matrix(fifa20[['preferred_foot','height_cm','weight_kg','overall']], alpha=0.5, figsize=(8, 8), diagonal='hist')
+plt.show()
+```
+
+
+    
+![png](output_16_0.png)
+    
+
+
+밀도함수로 선형 그래프를 확인할 수 있음 
+
+
+```python
+scatter_matrix(fifa20[['preferred_foot','height_cm','weight_kg','overall']], alpha=0.5, figsize=(8, 8), diagonal='kde')
+plt.show()
+```
+
+
+    
+![png](output_18_0.png)
+    
+
+
+#### 비고. matplotlib에서 축과 제목에 한글 사용하기
+>from matplotlib import font_manager, rc<br>
+>font_name = font_manager.FontProperties(fname="c:/Windows/Fonts/malgun.ttf").get_name()<br>
+    &emsp;<span style="color:green"># 시스템에서 기본 한글폰트를 가져와 폰트 이름 지정</span><br>
+>rc('font', family=font_name)<br>
+    &emsp;<span style="color:green"># rc() 함수에 한글폰트 설정</span>
+
+malgun : 맑은고딕<br>
+REFSAN : 산세리프 (한글 폰트로 변환 후 에러가 발생할 때 다시 바꿔줌)
+
+
+```python
+from matplotlib import font_manager, rc
+font_name = font_manager.FontProperties(fname="c:/Windows/Fonts/malgun.ttf").get_name()
+rc('font', family=font_name)
+```
