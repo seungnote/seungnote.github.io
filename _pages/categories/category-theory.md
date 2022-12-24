@@ -1,5 +1,5 @@
 ---
-title: "theory"
+title: "통계"
 layout: archive
 permalink: categories/theory
 author_profile: true
